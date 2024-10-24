@@ -1,5 +1,13 @@
 #include <stdio.h>
 
+int sq(int num){
+    return num * num;
+}
+
+int cube(int num){
+    return num * num * num;
+}
+
 int add(int i, int j) {
     return (i + j);
 }
@@ -64,12 +72,12 @@ int main() {
             case '^':
                 printf("Enter an integer: ");
                 scanf("%d", &a);
-                printf("Will be implemented soon...\n");
+                printf("The square of %d is %d\n", a, sq(a));
                 break;
             case '#':
                 printf("Enter an integer: ");
                 scanf("%d", &a);
-                printf("Will be implemented soon...\n");
+                printf("The cube of %d is %d", a, cube(a));
                 break;
             case 'i':
                 printf("Enter an integer: ");
